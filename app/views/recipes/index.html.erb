@@ -1,1 +1,16 @@
 <%# TODO: Implement %>
+
+<div>
+  <%= form_tag("/recipes/search", :method => "get") do %>
+
+
+    <%= label_tag :cuisine, "Cuisine"   %>
+    <%= text_field_tag :cuisine %>
+
+    <%= label_tag :ingredient, "Ingredient"   %>
+    <%= text_field_tag :ingredient %>
+
+    <button type="submit">Search</button>
+
+  <% end %>
+</div>

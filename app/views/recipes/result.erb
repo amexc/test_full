@@ -1,0 +1,19 @@
+
+<% debugger %>
+<% if @result.present? %>
+
+  <% @result.each do |recipe| %>
+    <h2<%== recipe.name %></h2><br>
+    <h2<%== recipe.instructions %></h2><br>
+    <h2<%== "#{recipe.cooking_time} min." %></h2><br>
+    <ul>
+      <% recipe.ingredients.each do |ingredient| %>
+      <li><%== ingredient.name %></li>
+      <% end %>
+    </ul>
+    <% end %>
+
+
+<% else %>
+  <h2>No recipes found</h2>
+<% end %>

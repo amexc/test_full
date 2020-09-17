@@ -12,6 +12,7 @@ group :development, :test do
   gem "capybara", "~> 2.7"
   gem "minitest", "5.10.3"
   gem "ci_reporter_minitest", "~> 1.0.0"
+  gem "listen"
 end
 
 group :development do
